@@ -1,0 +1,44 @@
+{
+  "name": "@project/app-one",
+  "version": "1.0.0",
+   "private": true,
+  "dependencies": {
+    "@project/components": "1.0.0",
+    "@ambroseus/react-scripts": "3.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "CI=true react-scripts test",
+    "lint": "eslint ./src/**/*.js --max-warnings=0 --format=codeframe"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!src/setupTests.{js,jsx}",
+      "!src/index.{js,jsx}",
+      "!src/serviceWorker.{js,jsx}",
+      "!src/**/*.(spec|test|stories).{js,jsx}"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "statements": 98,
+        "branches": 98,
+        "functions": 98,
+        "lines": 98
+      }
+    }
+  }
+}
